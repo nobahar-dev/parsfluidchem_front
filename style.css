@@ -1,0 +1,202 @@
+/* Common Styles */
+@font-face {
+    font-family: "iransSansR";
+    src: url("fonts/iransansdnweb.woff2") format("woff2");
+}
+@font-face {
+    font-family: "iransSansB";
+    src: url("fonts/iransansdnwebbold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "iransSansL";
+    src: url("fonts/iransansdnweblight.woff2") format("woff2");
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "iransSansR";
+}
+.icon-flipped {
+    transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+}
+/* Common Styles */
+/* Navbar */
+.main-nav {
+    --bs-bg-opacity: .9;
+    backdrop-filter: blur(8px);
+}
+.site-logo {
+    width: 60px;
+}
+.nav-item a {
+    transition: color .3s ease-in-out;
+}
+.nav-item:hover a {
+    color: red !important;
+}
+/* Navbar */
+/* Home Header */
+.home-header-title, .pars-chem {
+    text-shadow: 1px 1px 2px #333;
+}
+.home-header-text {
+    text-align: justify;
+    line-height: 35px;
+}
+.header-img {
+    width: 500px;
+    margin-top: -10px;
+    margin-right: 100px;
+}
+/* Home Header */
+
+/* Home Products */
+.products-items-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.product-item:hover {
+    cursor: pointer;
+}
+/* Home Products */
+/* Home About */
+.home-about-text {
+    text-align: justify;
+    line-height: 35px;
+}
+/* Home About */
+/* Site Footer */
+.footer-about-text {
+    text-align: justify;
+}
+.footer-article-img {
+    width: 100px;
+}
+.footer-article-date-author {
+    font-size: 14px;
+}
+.footer-article-title, 
+.footer-article-item i,
+.footer-article-item {
+    transition: all .3s ease-in-out;
+}
+.footer-article-item:hover .footer-article-title,
+.footer-article-item:hover i {
+    color: red !important;
+}
+.footer-article-item article {
+    border-radius: 3px;
+    padding: 5px;
+    transition: all .3s ease-in-out;
+}
+.footer-article-item:hover article {
+    background: #e0dfdf79;
+}
+.footer-links li a {
+    transition: color .3s ease-in-out;
+}
+.footer-links li a:hover {
+    color: red !important;
+}
+/* Site Footer */
+/* Article Page */
+.article-img {
+    width: 180px;
+    object-fit: cover;
+}
+.article-excerpt {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: justify;
+}
+.article-wrapper {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.article-item article {
+    transition: background .1s ease-in-out;
+}
+.article-item:hover article {
+    background: #fafafa79 !important;
+}
+.article-item .article-title {
+    transition: color .3s ease-in-out;
+}
+.article-item:hover .article-title {
+    color: red;
+}
+/* Article Page */
+/* Single Page */
+.single-content {
+    text-align: justify;
+    line-height: 30px;
+}
+/* Single Page */
+/* Product Single */
+.product-single-excerpt {
+    text-align: justify;
+    line-height: 30px;
+}
+.product-single-info-content {
+    text-align: justify;
+    line-height: 30px;
+}
+/* Product Single */
+/* About Page */
+.about-content {
+    text-align: justify;
+    line-height: 30px;
+}
+/* About Page */
+/* Responsive */
+@media (max-width: 1250px) {
+    .header-img {
+        margin-right: 60px;
+    }
+} 
+@media (max-width: 1200px) {
+    html {
+        font-size: 85% !important;
+    }
+    .header-img {
+        margin-right: 30px;
+    }
+}
+@media (max-width: 1000px) {
+    html {
+        font-size: 75% !important;
+    }
+    .products-items-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-article-date-author {
+        font-size: 10px;
+    }
+    .article-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 772px) {
+    .products-items-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .header-img {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .site-footer .container .row .col-md-4 {
+        border-bottom: 1px solid #e0dfdf79;
+        margin: 10px 0;
+    }
+    .article-excerpt {
+        font-size: 14px;
+    }
+}
+/* Responsive */
